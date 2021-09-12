@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "295f61cc-40b7-49d2-8e06-286527e9b6af",
+		"name": "Adidas Email Sender",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SendEmailOK",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/email/send/test@test.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"email",
+						"send",
+						"test@test.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendEmailKO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/email/send/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"email",
+						"send",
+						"test"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
